@@ -68,7 +68,7 @@ const filteredOffers = computed(() => {
 });
 
 onMounted(async () => {
-    const response = await fetch('https://gist.githubusercontent.com/fernandosmither/baa69b59e7a06fdc7d7d31cc3d1d3c09/raw/fe894b6c4cfa7b9351ea668811d6001fe3ff326e/job_listings.json')
+    const response = await fetch('https://raw.githubusercontent.com/data-diego/neurips2023/main/job_listings.json')
     offers.value = await response.json()
     loading.value = false
 })
